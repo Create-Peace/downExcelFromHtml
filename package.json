@@ -1,0 +1,24 @@
+{
+  "name": "downexcelfromhtml",
+  "version": "1.0.0",
+  "description": "Down the data from the web page as an unprepared form",
+  "main": "downexcelfromhtml.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Create-Peace/downExcelFromHtml.git"
+  },
+  "keywords": [
+    "excel",
+    "web",
+    "table"
+  ],
+  "author": "m-ray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Create-Peace/downExcelFromHtml/issues"
+  },
+  "homepage": "https://github.com/Create-Peace/downExcelFromHtml#readme"
+}
