@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用浏览器进行下载excel</title>
+    <style>
+        table{
+            border: 1px solid #000;
+        }
+        td {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+        <table id ='downloaddata' cellspacing="0">
+                <tr>
+                  <td colspan="5" align="center">资金明细表统计</td>
+                </tr>
+                <tr>
+                  <td>科目名称</td>
+                  <td>流水帐凭证号</td>
+                  <td>业务发生日期</td>
+                  <td>金额</td>
+                  <td>摘要</td>
+                </tr>
+                <tr>
+                  <td colspan="5" align="center">支出</td>
+                </tr>
+                <tr href="javascript:;">
+                  <td style="width: 165px;">927349237</td>
+                  <td style="width: 255px;">2937429374</td>
+                  <td style="width: 155px;">123123</td>
+                  <td style="width: 230px;">123123</td>
+                  <td style="width: 164px;">123123</td>
+                </tr>
+                <tr>
+                  <td style="width: 215px;">&nbsp;</td>
+                  <td style="width: 235px;">&nbsp;</td>
+                  <td style="width: 135px;">合计</td>
+                  <td style="width: 210px;">123123</td>
+                  <td style="width: 144px;">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td style="width: 215px;">&nbsp;</td>
+                  <td style="width: 235px;">&nbsp;</td>
+                  <td style="width: 135px;">当前累计</td>
+                  <td style="width: 210px;"><i class="act">￥</i><b>123123</b></td>
+                  <td style="width: 274px;">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="5" align="center">收入</td>
+                </tr>
+                <tr href="javascript:;" >
+                  <td style="width: 165px;">123123</td>
+                  <td style="width: 255px;">123123</td>
+                  <td style="width: 155px;">123123</td>
+                  <td style="width: 230px;">123123</td>
+                  <td style="width: 164px;">123123</td>
+                </tr>
+                <tr>
+                  <td style="width: 165px;">&nbsp;</td>
+                  <td style="width: 255px;">&nbsp;</td>
+                  <td style="width: 155px;">合计</td>
+                  <td style="width: 230px;">123123</td>
+                  <td style="width: 164px;">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td style="width: 165px;">&nbsp;</td>
+                  <td style="width: 255px;">&nbsp;</td>
+                  <td style="width: 155px;">当前累计</td>
+                  <td style="width: 230px;"><i class="act">￥</i><b>123123</b></td>
+                  <td style="width: 164px;">&nbsp;</td>
+                </tr>
+              </table>
+              <button onclick="testDownFile()">test</button>
+
+              <script src="../downexcelfromhtml.js"></script>
+              <script>
+                  function testDownFile () {
+                      console.log('测试下载文件')
+                    download('#downloaddata', 'test')
+                  }
+              </script>
+
+    
+</body>
+</html>
